@@ -13,11 +13,30 @@ const Component = props => (
   <div>
     {" "}
     <Form>
+      <h1>
+        Properties<Button>Add Property</Button>
+      </h1>
+      <h2>
+        Property #1<Button>Remove This Property</Button>
+      </h2>
       <Field
         name="propertyAddress"
         label="Property Address"
         component={renderTextInput}
       />
+      <h3>
+        Owners<Button>Add Owner</Button>
+      </h3>
+      <div>
+        <h4>
+          Owner #1<Button>Remove This Owner</Button>
+        </h4>
+        <Field
+          name="ownerName"
+          label="owner Name"
+          component={renderTextInput}
+        />
+      </div>
       <Button primary>Save</Button>
       <Button>Cancel</Button>
     </Form>
