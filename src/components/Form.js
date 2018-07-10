@@ -14,7 +14,7 @@ const Component = props => (
     {" "}
     <Form>
       <Field name="lastName" label="Last Name" component={renderTextInput} />
-      <Button primary>Submit</Button><Button>Cancel</Button>
+      <Button primary>Save</Button><Button>Cancel</Button>
     </Form>
   </div>
 );
